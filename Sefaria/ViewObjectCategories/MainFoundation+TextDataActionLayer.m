@@ -140,9 +140,9 @@
 //
 
 - (void) primaryBookMatrix {
-    NSLog(@"TT %d",self.theTorahText);
-    NSLog(@"PT %d",self.theProphetText);
-    NSLog(@"WT %d",self.theWritingsText);
+    NSLog(@"TT %ld",self.theTorahText);
+    NSLog(@"PT %ld",self.theProphetText);
+    NSLog(@"WT %ld",self.theWritingsText);
 }
 
 - (bool) primaryBookCheck

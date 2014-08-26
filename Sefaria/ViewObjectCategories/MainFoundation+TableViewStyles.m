@@ -32,7 +32,6 @@
 #define ACC_FONT_NAME @"HelveticaNeue-Light"
 #define ACC_FONT_SIZE 10.0
 
-
 //
 //
 ////////
@@ -99,7 +98,7 @@
 {
     CGRect myRect = CGRectMake(0,0,30,cell.frame.size.height);
     UILabel* myLabel = [[UILabel alloc]initWithFrame:myRect];
-    NSString* myLineNumber = [NSString stringWithFormat:@"%d",indexPathRow+1];
+    NSString* myLineNumber = [NSString stringWithFormat:@"%ld",indexPathRow+1];
     myLabel.text = myLineNumber;
     myLabel.textColor = [UIColor grayColor];
     myLabel.font = [UIFont fontWithName: ACC_FONT_NAME size:ACC_FONT_SIZE];
@@ -111,7 +110,7 @@
 {
     CGRect myRect = CGRectMake(0,0,30,cell.frame.size.height);
     UILabel* myLabel = [[UILabel alloc]initWithFrame:myRect];
-    NSString* myLineNumber = [NSString stringWithFormat:@"%d",indexPathRow+1];
+    NSString* myLineNumber = [NSString stringWithFormat:@"%ld",indexPathRow+1];
     myLabel.text = myLineNumber;
     myLabel.textColor = [UIColor grayColor];
     myLabel.font = [UIFont fontWithName: ACC_FONT_NAME size:ACC_FONT_SIZE];

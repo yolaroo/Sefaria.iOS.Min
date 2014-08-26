@@ -10,6 +10,7 @@
 
 #import "MainFoundation+BookMarkActions.h"
 
+#import "MainFoundation+MainViewActions.h"
 
 @implementation MainFoundation (HebrewTextStyles)
 
@@ -28,14 +29,7 @@
 {
     if ([self.primaryHebrewTextArray count] > indexPath.row){
         NSString*myString = [self.primaryHebrewTextArray objectAtIndex:indexPath.row] ? [self.primaryHebrewTextArray objectAtIndex:indexPath.row] : @"error";
-        myString = [myString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"<em>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</em>" withString:@""];
-        
-        return myString;
+        return [self removeHTMLFromString:myString];
     }
     else {
         NSLog(@"error conversion number");
@@ -48,13 +42,7 @@
     if ([self.primaryDataArray count] > indexPath.row){
         LineText*myLine = [self.primaryDataArray objectAtIndex:indexPath.row];
         NSString*myString = myLine.hebrewText ? myLine.hebrewText : @"error";
-        myString = [myString stringByReplacingOccurrencesOfString:@"<i>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</i>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"<em>" withString:@""];
-        myString = [myString stringByReplacingOccurrencesOfString:@"</em>" withString:@""];
-
+        myString =  [self appendBookmarkIcon:myLine withString:myString];
         return [self appendBookmarkIcon:myLine withString:myString];
     }
     else {

@@ -126,14 +126,8 @@
 {
     @try {
         SefariaAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
-        
-        //self.seedManagedObjectContext = nil;
-        //self.seedManagedObjectContext = appDelegate.seedManagedObjectContext;
-        
         self.managedObjectContext = nil;
         self.managedObjectContext = appDelegate.managedObjectContext;
-        //self.managedObjectContext = appDelegate.seedManagedObjectContext;
-
         LOG NSLog(@"Foundation String Name: %@",appDelegate.stringName);
     }
     @catch (NSException *exception) {

@@ -371,7 +371,7 @@
 
 - (void) setLabelsForName {
 
-    NSString* myString  = [NSString stringWithFormat:@"%@ %d",self.myCurrentTextTitle,self.theChapterNumber+1];
+    NSString* myString  = [NSString stringWithFormat:@"%@ %ld",self.myCurrentTextTitle,self.theChapterNumber+1];
     self.hebrewLabel.text = myString;
     self.englishLabel.text = myString;
     self.searchLabel.text = myString;

@@ -28,7 +28,6 @@
 		C603078B1986F44500D7B6FF /* SpeechClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C603078A1986F44500D7B6FF /* SpeechClass.m */; };
 		C603078E1986F47400D7B6FF /* MainFoundation+DataControlPageActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C603078D1986F47400D7B6FF /* MainFoundation+DataControlPageActions.m */; };
 		C60307911986F4A100D7B6FF /* DataControlPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60307901986F4A100D7B6FF /* DataControlPageView.m */; };
-		C60307941986F55C00D7B6FF /* MenuScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60307931986F55C00D7B6FF /* MenuScreenView.m */; };
 		C60307971986F56700D7B6FF /* StartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C60307961986F56700D7B6FF /* StartScreen.m */; };
 		C607E05919A7E6950094EFF0 /* MainFoundation+NavBarButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = C607E05819A7E6950094EFF0 /* MainFoundation+NavBarButtons.m */; };
 		C612F9BE197D1F5300F0F306 /* MainFoundation+FetchTheTextTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C612F9BD197D1F5300F0F306 /* MainFoundation+FetchTheTextTitle.m */; };
@@ -54,7 +53,6 @@
 		C67E95C619A1D15300FD79E5 /* RestMenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C67E95C519A1D15300FD79E5 /* RestMenuDataModel.m */; };
 		C67E95C919A1D32A00FD79E5 /* RestMenuDataFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = C67E95C819A1D32A00FD79E5 /* RestMenuDataFetch.m */; };
 		C6A81E9A199C0BF40065F97C /* MainFoundation+TextAnalysisActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A81E99199C0BF40065F97C /* MainFoundation+TextAnalysisActions.m */; };
-		C6AC75A519A7226200ADECCF /* BookCover.png in Resources */ = {isa = PBXBuildFile; fileRef = C6AC75A419A7226200ADECCF /* BookCover.png */; };
 		C6B5BA1B19A971B6006C4175 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B5BA1A19A971B6006C4175 /* Comment.m */; };
 		C6B5BA1E19A971B7006C4175 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B5BA1D19A971B7006C4175 /* Picture.m */; };
 		C6B5BA2119A971B7006C4175 /* LocationAuxName.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B5BA2019A971B7006C4175 /* LocationAuxName.m */; };
@@ -110,6 +108,7 @@
 		C6DCA47F19A0031D007136D7 /* BookFromRestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DCA47E19A0031D007136D7 /* BookFromRestView.m */; };
 		C6DCA48319A0095C007136D7 /* RestTextDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DCA48219A0095C007136D7 /* RestTextDataModel.m */; };
 		C6DCA48619A00B9E007136D7 /* MainFoundation+RestTextActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DCA48519A00B9E007136D7 /* MainFoundation+RestTextActions.m */; };
+		C6DDEE8919AC7A1D00F816C4 /* Sefaria-Back-Ground.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DDEE8819AC7A1D00F816C4 /* Sefaria-Back-Ground.png */; };
 		C6E2D84C19A5379A003B801D /* CellWithLeftSideNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E2D84B19A5379A003B801D /* CellWithLeftSideNumberTableViewCell.m */; };
 		C6E4D6C919AB076000A0BD06 /* MainFoundation+SeachTextActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E4D6C819AB076000A0BD06 /* MainFoundation+SeachTextActions.m */; };
 		C6E798D8196D33A40079440F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E798D7196D33A40079440F /* QuartzCore.framework */; };
@@ -171,8 +170,6 @@
 		C603078D1986F47400D7B6FF /* MainFoundation+DataControlPageActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MainFoundation+DataControlPageActions.m"; path = "ViewObjectCategories/MainFoundation+DataControlPageActions.m"; sourceTree = "<group>"; };
 		C603078F1986F4A100D7B6FF /* DataControlPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataControlPageView.h; path = ViewObjects/DataControlPageView.h; sourceTree = "<group>"; };
 		C60307901986F4A100D7B6FF /* DataControlPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataControlPageView.m; path = ViewObjects/DataControlPageView.m; sourceTree = "<group>"; };
-		C60307921986F55C00D7B6FF /* MenuScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScreenView.h; path = ViewObjects/MenuScreenView.h; sourceTree = "<group>"; };
-		C60307931986F55C00D7B6FF /* MenuScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuScreenView.m; path = ViewObjects/MenuScreenView.m; sourceTree = "<group>"; };
 		C60307951986F56700D7B6FF /* StartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartScreen.h; path = ViewObjects/StartScreen.h; sourceTree = "<group>"; };
 		C60307961986F56700D7B6FF /* StartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartScreen.m; path = ViewObjects/StartScreen.m; sourceTree = "<group>"; };
 		C607E05719A7E6950094EFF0 /* MainFoundation+NavBarButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MainFoundation+NavBarButtons.h"; path = "ViewObjects/MainFoundation+NavBarButtons.h"; sourceTree = "<group>"; };
@@ -220,7 +217,6 @@
 		C67E95C819A1D32A00FD79E5 /* RestMenuDataFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestMenuDataFetch.m; path = DataObjects/RestMenuDataFetch.m; sourceTree = "<group>"; };
 		C6A81E98199C0BF40065F97C /* MainFoundation+TextAnalysisActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MainFoundation+TextAnalysisActions.h"; path = "ViewObjectCategories/MainFoundation+TextAnalysisActions.h"; sourceTree = "<group>"; };
 		C6A81E99199C0BF40065F97C /* MainFoundation+TextAnalysisActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MainFoundation+TextAnalysisActions.m"; path = "ViewObjectCategories/MainFoundation+TextAnalysisActions.m"; sourceTree = "<group>"; };
-		C6AC75A419A7226200ADECCF /* BookCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BookCover.png; sourceTree = "<group>"; };
 		C6B5BA1919A971B6006C4175 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = CoreDataObjects/Comment.h; sourceTree = "<group>"; };
 		C6B5BA1A19A971B6006C4175 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = CoreDataObjects/Comment.m; sourceTree = "<group>"; };
 		C6B5BA1C19A971B7006C4175 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture.h; path = CoreDataObjects/Picture.h; sourceTree = "<group>"; };
@@ -319,6 +315,7 @@
 		C6DCA48219A0095C007136D7 /* RestTextDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestTextDataModel.m; path = DataObjects/RestTextDataModel.m; sourceTree = "<group>"; };
 		C6DCA48419A00B9E007136D7 /* MainFoundation+RestTextActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MainFoundation+RestTextActions.h"; path = "ViewObjectCategories/MainFoundation+RestTextActions.h"; sourceTree = "<group>"; };
 		C6DCA48519A00B9E007136D7 /* MainFoundation+RestTextActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MainFoundation+RestTextActions.m"; path = "ViewObjectCategories/MainFoundation+RestTextActions.m"; sourceTree = "<group>"; };
+		C6DDEE8819AC7A1D00F816C4 /* Sefaria-Back-Ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sefaria-Back-Ground.png"; sourceTree = "<group>"; };
 		C6E2D84A19A5379A003B801D /* CellWithLeftSideNumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellWithLeftSideNumberTableViewCell.h; path = ViewObjects/CellWithLeftSideNumberTableViewCell.h; sourceTree = "<group>"; };
 		C6E2D84B19A5379A003B801D /* CellWithLeftSideNumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellWithLeftSideNumberTableViewCell.m; path = ViewObjects/CellWithLeftSideNumberTableViewCell.m; sourceTree = "<group>"; };
 		C6E4D6C719AB076000A0BD06 /* MainFoundation+SeachTextActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MainFoundation+SeachTextActions.h"; path = "ViewObjectCategories/MainFoundation+SeachTextActions.h"; sourceTree = "<group>"; };
@@ -427,15 +424,6 @@
 			name = Animations;
 			sourceTree = "<group>";
 		};
-		C6462CB2196B87B700E2FB2D /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				C60307921986F55C00D7B6FF /* MenuScreenView.h */,
-				C60307931986F55C00D7B6FF /* MenuScreenView.m */,
-			);
-			name = Menu;
-			sourceTree = "<group>";
-		};
 		C6462CB3196BE91D00E2FB2D /* View Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,10 +434,10 @@
 				C6DCA48019A0032A007136D7 /* Rest View */,
 				C6FA443A199A9739002F7B70 /* Reading With Comments */,
 				C612F9CB197D2EA300F0F306 /* Chapter Read Core Data View */,
-				C65948F9197BAF1700A4784B /* Tanach View */,
 				C6C058AC198105F8003EC2DC /* Search View */,
-				C65948F8197BAF0900A4784B /* Advanced JSON View */,
-				C65948F7197BAEFF00A4784B /* Data Actions View */,
+				C65948F7197BAEFF00A4784B /* Data Actions View (Hidden) */,
+				C65948F9197BAF1700A4784B /* Tanach View (Not Used) */,
+				C65948F8197BAF0900A4784B /* Advanced JSON View (Not Used) */,
 			);
 			name = "View Classes";
 			sourceTree = "<group>";
@@ -504,7 +492,7 @@
 			name = "Core Data Objects";
 			sourceTree = "<group>";
 		};
-		C65948F7197BAEFF00A4784B /* Data Actions View */ = {
+		C65948F7197BAEFF00A4784B /* Data Actions View (Hidden) */ = {
 			isa = PBXGroup;
 			children = (
 				C603078F1986F4A100D7B6FF /* DataControlPageView.h */,
@@ -521,25 +509,25 @@
 				C6A81E98199C0BF40065F97C /* MainFoundation+TextAnalysisActions.h */,
 				C6A81E99199C0BF40065F97C /* MainFoundation+TextAnalysisActions.m */,
 			);
-			name = "Data Actions View";
+			name = "Data Actions View (Hidden)";
 			sourceTree = "<group>";
 		};
-		C65948F8197BAF0900A4784B /* Advanced JSON View */ = {
+		C65948F8197BAF0900A4784B /* Advanced JSON View (Not Used) */ = {
 			isa = PBXGroup;
 			children = (
 				C60307501986F33F00D7B6FF /* AdvancedTextView.h */,
 				C60307511986F33F00D7B6FF /* AdvancedTextView.m */,
 			);
-			name = "Advanced JSON View";
+			name = "Advanced JSON View (Not Used)";
 			sourceTree = "<group>";
 		};
-		C65948F9197BAF1700A4784B /* Tanach View */ = {
+		C65948F9197BAF1700A4784B /* Tanach View (Not Used) */ = {
 			isa = PBXGroup;
 			children = (
 				C603074D1986F32E00D7B6FF /* MainTextView.h */,
 				C603074E1986F32E00D7B6FF /* MainTextView.m */,
 			);
-			name = "Tanach View";
+			name = "Tanach View (Not Used)";
 			sourceTree = "<group>";
 		};
 		C659491E197BCB4A00A4784B /* Create Objects */ = {
@@ -677,7 +665,7 @@
 		C6B978C61987498C002175EF /* BG */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC75A419A7226200ADECCF /* BookCover.png */,
+				C6DDEE8819AC7A1D00F816C4 /* Sefaria-Back-Ground.png */,
 				C64956B019A68EBB00135FE7 /* NewWoodBG.png */,
 			);
 			name = BG;
@@ -816,11 +804,11 @@
 				C615A7EF19A46C19006AA7E0 /* String Class */,
 				C6B8A6C2199D929E00AFA475 /* Gesture Class */,
 				C6462CB3196BE91D00E2FB2D /* View Classes */,
-				C6E4B07B19748D8A009F5226 /* Complete Book Text Class */,
+				C6E4B07B19748D8A009F5226 /* Complete Book Text Title List Class */,
 				C6C3A84719997E1600263582 /* Comment Data Model */,
 				C6B9A1F319785A2F0026C0D4 /* General Book Data Model */,
 				C6DAC1C51976598F008B948A /* Menu Builder Data Model */,
-				C6C41FEC1968D2F2001C8883 /* Tanach Data Model */,
+				C6C41FEC1968D2F2001C8883 /* Tanach Data Model (Not Used) */,
 				C6C41FE41968CE0C001C8883 /* Data */,
 				C6C41FDD1968CC89001C8883 /* Foundation */,
 				C68D1399196E49D400675B77 /* Core Data */,
@@ -842,7 +830,6 @@
 			isa = PBXGroup;
 			children = (
 				C6594992197BE31100A4784B /* Delegate */,
-				C6462CB2196B87B700E2FB2D /* Menu */,
 				C68D1398196E496400675B77 /* Start Screen */,
 				C6C41FB01968CBF8001C8883 /* Main_iPhone.storyboard */,
 				C6C41FB31968CBF8001C8883 /* Main_iPad.storyboard */,
@@ -857,7 +844,7 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		C6C41FEC1968D2F2001C8883 /* Tanach Data Model */ = {
+		C6C41FEC1968D2F2001C8883 /* Tanach Data Model (Not Used) */ = {
 			isa = PBXGroup;
 			children = (
 				C603076B1986F3DB00D7B6FF /* TanachAttributeClass.h */,
@@ -869,7 +856,7 @@
 				C603077A1986F41300D7B6FF /* MainFoundation+TextDataActionLayer.h */,
 				C603077B1986F41300D7B6FF /* MainFoundation+TextDataActionLayer.m */,
 			);
-			name = "Tanach Data Model";
+			name = "Tanach Data Model (Not Used)";
 			sourceTree = "<group>";
 		};
 		C6DAC1C51976598F008B948A /* Menu Builder Data Model */ = {
@@ -893,13 +880,13 @@
 			name = "Rest View";
 			sourceTree = "<group>";
 		};
-		C6E4B07B19748D8A009F5226 /* Complete Book Text Class */ = {
+		C6E4B07B19748D8A009F5226 /* Complete Book Text Title List Class */ = {
 			isa = PBXGroup;
 			children = (
 				C60307651986F3AE00D7B6FF /* CompleteBookClass.h */,
 				C60307661986F3AE00D7B6FF /* CompleteBookClass.m */,
 			);
-			name = "Complete Book Text Class";
+			name = "Complete Book Text Title List Class";
 			sourceTree = "<group>";
 		};
 		C6EBDACE19989C86006E145D /* Tanach */ = {
@@ -1014,10 +1001,10 @@
 				C6548C5519ABE96B00F38FD2 /* x03.CDBStore in Resources */,
 				C6C41FB51968CBF8001C8883 /* Main_iPad.storyboard in Resources */,
 				C6C41FBA1968CBF8001C8883 /* Images.xcassets in Resources */,
-				C6AC75A519A7226200ADECCF /* BookCover.png in Resources */,
 				C64956B119A68EBB00135FE7 /* NewWoodBG.png in Resources */,
 				C6C41FB21968CBF8001C8883 /* Main_iPhone.storyboard in Resources */,
 				C6C41FA91968CBF8001C8883 /* InfoPlist.strings in Resources */,
+				C6DDEE8919AC7A1D00F816C4 /* Sefaria-Back-Ground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,7 +1063,6 @@
 				C60307761986F3F200D7B6FF /* MainFoundation.m in Sources */,
 				C6C140D61990EA3200EF9D29 /* MainFoundation+FetchTheCommentCollectionTitle.m in Sources */,
 				C6B5BA4519A971B7006C4175 /* Person.m in Sources */,
-				C60307941986F55C00D7B6FF /* MenuScreenView.m in Sources */,
 				C60307721986F3DB00D7B6FF /* TanachDataModel.m in Sources */,
 				C6B5BA3019A971B7006C4175 /* CommentCollectionTitle.m in Sources */,
 				C6DCA48619A00B9E007136D7 /* MainFoundation+RestTextActions.m in Sources */,
