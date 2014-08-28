@@ -8,6 +8,7 @@
 
 #import "StartScreen.h"
 #import "SefariaAppDelegate.h"
+#import <objc/message.h>
 
 @interface StartScreen ()
 {
@@ -127,6 +128,23 @@
     [super viewWillAppear:animated];
 
     self.navigationController.navigationBarHidden = true;
+    
+    [self unlockPortrait];
+    [self flipScreen];
+    
+    
+}
+
+- (void) unlockPortrait {
+    SefariaAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.screenIsPortraitOnly = false;
+
+}
+
+- (void) flipScreen {
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationLandscapeLeft );
+    }
 }
 
 - (void)didReceiveMemoryWarning

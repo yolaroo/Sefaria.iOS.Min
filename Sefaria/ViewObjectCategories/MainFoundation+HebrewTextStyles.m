@@ -42,8 +42,9 @@
     if ([self.primaryDataArray count] > indexPath.row){
         LineText*myLine = [self.primaryDataArray objectAtIndex:indexPath.row];
         NSString*myString = myLine.hebrewText ? myLine.hebrewText : @"error";
-        myString =  [self appendBookmarkIcon:myLine withString:myString];
-        return [self appendBookmarkIcon:myLine withString:myString];
+        myString = [self removeHTMLFromString:myString];
+        myString = [self appendBookmarkIcon:myLine withString:myString];
+        return myString;
     }
     else {
         NSLog(@"error conversion number");
@@ -58,7 +59,12 @@
 - (UITableViewCell *) setMyHebrewTextCell: (UITableViewCell*) cell withString :(NSString *) myString
 {
     if (myString != nil){
-        cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+        if ([self.theSearchTerm length]) {
+            cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+        }
+        else {
+            cell.textLabel.text = myString;
+        }
         cell.textLabel.textAlignment = UIControlContentHorizontalAlignmentRight;
         if (self.fontSizeLargeSet) {
             cell.textLabel.font = IPAD_FONT_XTLARGE;
@@ -86,7 +92,12 @@
 - (CellWithLeftSideNumberTableViewCell *) setMyCustomHebrewTextCell: (CellWithLeftSideNumberTableViewCell*) cell withString :(NSString *) myString
 {
     if (myString != nil){
-        cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+        if ([self.theSearchTerm length]) {
+            cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+        }
+        else {
+            cell.textLabel.text = myString;
+        }
         cell.textLabel.textAlignment = UIControlContentHorizontalAlignmentRight;
         if (self.fontSizeLargeSet) {
             cell.textLabel.font = IPAD_FONT_XTLARGE;

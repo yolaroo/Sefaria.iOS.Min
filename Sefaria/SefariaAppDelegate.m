@@ -20,8 +20,9 @@
 #define LOG if(NILLOG == 1) //one is pass - two is normal
 
 #define NILSEED 2
-#define LOGG if(NILSEED == 1) //one is pass - two is normal
-
+#define SEED_BUILD if(NILSEED == 1) //one is pass - two is normal
+#define SEED_NAME @"x04"
+#define SEED_NAME_FULL @"x04.CDBStore"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -49,6 +50,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+}
+
+//
+//
+//////////
+#pragma mark - View Orientation
+//////////
+//
+//
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    NSUInteger orientations = UIInterfaceOrientationMaskPortrait;
+    if (self.screenIsPortraitOnly) {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    else {
+        if(self.window.rootViewController){
+            UIViewController *presentedViewController = [[(UINavigationController *)self.window.rootViewController viewControllers] lastObject];
+            orientations = [presentedViewController supportedInterfaceOrientations];
+        }
+        return orientations;
+    }
 }
 
 //
@@ -160,26 +183,28 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        /*
-        //
-        NSString* stringName = @"SafariaCoreData";
-        NSString* myStringName = [NSString stringWithFormat:@"%@.sqlite",stringName];
-        NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:myStringName];
-        NSURL *storeUrl = [NSURL fileURLWithPath:storePath];
-        //
-        */
         
-        
+        NSURL *storeUrl;
+        SEED_BUILD {
         //
-        NSURL *storeUrl = [[self seedApplicationDocumentsDirectory] URLByAppendingPathComponent:@"x03.CDBStore"];
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        if (![fileManager fileExistsAtPath:[storeUrl path]]) {
-            NSURL *defaultStoreURL = [[NSBundle mainBundle] URLForResource:@"x03" withExtension:@"CDBStore"];
-            if (defaultStoreURL) {
-                [fileManager copyItemAtURL:defaultStoreURL toURL:storeUrl error:NULL];
-            }
+            NSString* stringName = @"SafariaCoreData";
+            NSString* myStringName = [NSString stringWithFormat:@"%@.sqlite",stringName];
+            NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:myStringName];
+            storeUrl = [NSURL fileURLWithPath:storePath];
+        //
         }
-        
+        else {
+        //
+            storeUrl = [[self seedApplicationDocumentsDirectory] URLByAppendingPathComponent:SEED_NAME_FULL];
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            if (![fileManager fileExistsAtPath:[storeUrl path]]) {
+                NSURL *defaultStoreURL = [[NSBundle mainBundle] URLForResource:SEED_NAME withExtension:@"CDBStore"];
+                if (defaultStoreURL) {
+                    [fileManager copyItemAtURL:defaultStoreURL toURL:storeUrl error:NULL];
+                }
+            }
+        //
+        }
         
         
         NSMutableDictionary *pragmaOptions = [NSMutableDictionary dictionary];

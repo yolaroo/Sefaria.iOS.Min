@@ -276,8 +276,12 @@
         [cell.textLabel sizeToFit];
         [cell.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
         [cell setBackgroundColor:[UIColor clearColor]];
-        cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
-        
+        if ([self.theSearchTerm length]) {
+            cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+        }
+        else {
+            cell.textLabel.text = myString;
+        }
         if ([myInfo length]) {
             cell.detailTextLabel.text = myInfo;
         }
@@ -371,7 +375,7 @@
 
 - (void) setLabelsForName {
 
-    NSString* myString  = [NSString stringWithFormat:@"%@ %ld",self.myCurrentTextTitle,self.theChapterNumber+1];
+    NSString* myString  = [NSString stringWithFormat:@"%@ %d",self.myCurrentTextTitle,self.theChapterNumber+1];
     self.hebrewLabel.text = myString;
     self.englishLabel.text = myString;
     self.searchLabel.text = myString;

@@ -21,4 +21,6 @@
 @property (strong, nonatomic) NSURL* storeURL;
 @property (strong, nonatomic) NSString* stringName;
 
+@property (nonatomic) BOOL screenIsPortraitOnly;
+
 @end

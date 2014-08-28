@@ -17,10 +17,14 @@
 #define IPAD_FONT [UIFont fontWithName: FONT_NAME size: FONT_SIZE]
 #define IPAD_FONT_LARGE [UIFont fontWithName: FONT_NAME size: FONT_SIZE*1.4]
 
-- (UITableViewCell *) setMyCommentCell: (UITableViewCell*) cell cellForRowAtIndexPath:(NSIndexPath *)indexPath withSelectedIndex : (NSInteger) selectedIndex withText : (NSString*) theText withInfo : (NSString*) theInfo
+- (UITableViewCell *) setMyCommentCell: (UITableViewCell*) cell cellForRowAtIndexPath:(NSIndexPath *)indexPath withSelectedIndex : (NSInteger) selectedIndex withText : (NSString*) myString withInfo : (NSString*) theInfo
 {
-    if (theText != nil){
-        cell.textLabel.text = theText;
+    if (myString != nil){
+        
+        
+        cell.textLabel.attributedText = [self.myBestStringClass setTextHighlighted:self.theSearchTerm withSentence:myString];
+
+        //cell.textLabel.text = theText;
         cell.textLabel.textAlignment = UIControlContentHorizontalAlignmentRight;
         cell.textLabel.font = IPAD_FONT;
         if (selectedIndex == indexPath.row) {
