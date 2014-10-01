@@ -27,6 +27,9 @@
 #define SHADOW_ALPHA 0.4f
 #define SHADOW_COLOR [[UIColor colorWithRed:5.0f/255.0f green:5.0f/255.0f blue:5.0f/255.0f alpha:SHADOW_ALPHA] CGColor]
 
+#define isDeviceIPad UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad
+#define isDeviceIPhone UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone
+
 //
 //
 ////////
@@ -127,8 +130,14 @@
 
     self.navigationController.navigationBarHidden = true;
     
-    [self unlockPortrait];
-    [self flipScreen];
+    if (isDeviceIPhone){
+        
+    }
+    else {
+        [self unlockPortrait];
+        [self flipScreen];
+    }
+    
     
     
 }

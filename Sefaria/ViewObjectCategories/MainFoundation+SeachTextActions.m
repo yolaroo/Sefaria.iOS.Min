@@ -27,7 +27,6 @@
 
 - (void) createSearchTitle : (NSManagedObjectContext*) context
 {
-    NSLog(@"create search object");
     Searches* newSearch = [Searches newSearchTitle:self.theSearchTerm withContext:context];
     newSearch.displayOrder = [NSNumber numberWithInteger : [self.searchTitlesArray count] + 1];
     [self saveData:context];

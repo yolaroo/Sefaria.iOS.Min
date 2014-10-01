@@ -46,7 +46,7 @@
     
     if (self.touchView.tag >= 20000){
         self.objectTouchCenter = self.touchView.center.x;
-        LOG NSLog(@"x : %d - y : %f",self.objectTouchCenter,self.touchView.center.y);
+        LOG NSLog(@"x : %ld - y : %f",(long)self.objectTouchCenter,self.touchView.center.y);
     }
 }
 
@@ -57,7 +57,7 @@
     self.touchView = [self hitTest:self.touchPoint withEvent:event];
     
     if (self.touchView.tag > TAG_BASE){
-        LOG NSLog(@"touch move %d",self.touchView.tag);
+        LOG NSLog(@"touch move %ld",(long)self.touchView.tag);
         
         CGPoint location = [touch locationInView:self];
         NSInteger previousTimestamp = event.timestamp;
@@ -65,7 +65,7 @@
         CGPoint prevLocation = [touch previousLocationInView:self];
         NSInteger velocity = (location.x - prevLocation.x) / timeSincePrevious;
         
-        LOG NSLog(@"x : %f y : %f v : %d",self.touchPoint.x,self.touchPoint.y,velocity);
+        LOG NSLog(@"x : %f y : %f v : %ld",self.touchPoint.x,self.touchPoint.y,(long)velocity);
         if (velocity < -2) {
             CGPoint myPoint = CGPointMake(self.touchView.center.x-5,self.touchView.center.y);
             self.touchView.center = myPoint;
@@ -107,7 +107,7 @@
     self.touchPoint = [touch locationInView:self];
     self.touchView = [self hitTest:self.touchPoint withEvent:event];
     if (self.touchView.tag >= 20000){
-        LOG NSLog(@"touch end %d",self.touchView.tag);
+        LOG NSLog(@"touch end %ld",(long)self.touchView.tag);
     }
 }
 
