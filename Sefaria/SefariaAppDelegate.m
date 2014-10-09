@@ -10,11 +10,7 @@
 
 @implementation SefariaAppDelegate
 
-
-
 @synthesize managedObjectContext=_managedObjectContext,persistentStoreCoordinator=_persistentStoreCoordinator,managedObjectModel=_managedObjectModel;
-
-
 
 #define NILLOG 2
 #define LOG if(NILLOG == 1) //one is pass - two is normal
@@ -164,7 +160,6 @@
     return _managedObjectContext;
 }
 
-
 //
 ////
 //
@@ -198,17 +193,8 @@
         //
             NSLog(@"Regular Seed Access");
             storeUrl = [[self seedApplicationDocumentsDirectory] URLByAppendingPathComponent:SEED_NAME_FULL];
-            NSFileManager *fileManager = [NSFileManager defaultManager];
-            if (![fileManager fileExistsAtPath:[storeUrl path]]) {
-                NSURL *defaultStoreURL = [[NSBundle mainBundle] URLForResource:SEED_NAME withExtension:@"CDBStore"];
-                if (defaultStoreURL) {
-                    [fileManager copyItemAtURL:defaultStoreURL toURL:storeUrl error:NULL];
-                }
-            }
         //
         }
-        
-        
         NSMutableDictionary *pragmaOptions = [NSMutableDictionary dictionary];
         [pragmaOptions setObject:@"DELETE" forKey:@"journal_mode"];
         
@@ -219,7 +205,6 @@
                                  pragmaOptions,
                                  NSSQLitePragmasOption,
                                  nil];
-        
         /*
          NSDictionary *options = @{
          NSMigratePersistentStoresAutomaticallyOption : @YES,

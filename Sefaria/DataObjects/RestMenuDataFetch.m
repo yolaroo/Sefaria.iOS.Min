@@ -29,8 +29,6 @@
     NSURL *pathURL = [NSURL URLWithString: theURLString];
     NSLog(@"-- request... --");
     
-    
-    
     NSURLRequest *request = [NSURLRequest requestWithURL:pathURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     
     [NSURLConnection sendAsynchronousRequest:request

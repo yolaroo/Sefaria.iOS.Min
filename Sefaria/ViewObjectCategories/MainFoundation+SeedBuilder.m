@@ -17,19 +17,18 @@
 {
     NSString* myStringName = [NSString stringWithFormat:@"%@.sqlite",@"SafariaCoreData"];
     NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:myStringName];
-//#warning need to check path
-    __unused NSURL*storeUrl = [NSURL fileURLWithPath:storePath];
+    NSString *storeUrl = (NSString*)[NSURL fileURLWithPath:storePath];
     
     NSString* deskStorePath = [NSString stringWithFormat:@"/Users/%@/Desktop/newMySQL.CDBStore", NSUserName()];
     
     NSFileManager * fileManager = [ NSFileManager defaultManager];
     
     NSError*error;
-    if (![fileManager copyItemAtPath:storePath toPath: deskStorePath error:&error]){
+    if (![fileManager copyItemAtPath:storeUrl toPath: deskStorePath error:&error]){
         NSLog(@"error with path");
     }
     else {
-        LOG NSLog(@"Copied");
+        NSLog(@"Copied");
     }
 }
 

@@ -197,14 +197,9 @@
     NSString* myString;
     CGFloat frameWidth = tableView.frame.size.width;
     if ([self.searchLineDataArray count] > indexPath.row) {
-        
         NSManagedObject* myLineObject = [self.searchLineDataArray objectAtIndex:indexPath.row];
         NSArray* writeData = [self combinedTextSearchLineWrite : myLineObject];
         myString = [writeData firstObject];
-
-//#warning -- ??
-
-        //myString = [self.searchTextArray objectAtIndex:indexPath.row];
     }
     if ([myString length]) {
         

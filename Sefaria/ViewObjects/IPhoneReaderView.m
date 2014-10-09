@@ -33,7 +33,6 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mainViewContainer;
 
-
 //tables
 @property (weak, nonatomic) IBOutlet UITableView * smallMenuTable;
 @property (weak, nonatomic) IBOutlet UITableView * englishTextTable;
